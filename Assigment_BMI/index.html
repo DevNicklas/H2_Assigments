@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Udregner</title>
+</head>
+<body>
+    <h1>BMI Udregner</h1>
+    <p>Skriv din højde i centimeter, og vægt i kilogram.<br>Højden og vægten skal være over 0.</p>
+    <form id="bmiForm">
+        <label for="height">Højde i cm</label><br>
+        <input type="text" id="height" name="height" required><br><br>
+        <label for="weight">Vægt i kg</label><br>
+        <input type="text" id="weight" name="weight" required><br><br>
+        <input type="submit" value="Udregn BMI">
+    </form>
+    <strong><p id="resultText"></p></strong>
+
+    <script src="main.js"></script>
+</body>
+</html>
