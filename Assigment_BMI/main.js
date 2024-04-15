@@ -10,12 +10,11 @@ document.getElementById("bmiForm").addEventListener("submit", function() {
         let bmi = calcBMI(height, weight);
         let bmiInfo = getBMIInfo(bmi);
 
-        console.log(bmiInfo);
-
         result.innerHTML = `Din BMI er ${bmi} (${bmiInfo.title})`;
         result.style.color = bmiInfo.color;
     } else {
         result.innerHTML = "Du skal skrive højde og vægt som tal, og over 0";
+        result.style.color = 'maroon';
     }
 });
 
