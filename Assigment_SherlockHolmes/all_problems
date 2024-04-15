@@ -1,0 +1,16 @@
+Så først og fremmest vi bruger ikke rigtig var længere, det er ikke et problem men det er det første jeg lægger mærke til.
+Derudover er der noget formatering som ikke ser helt rigtigt ud, men koden vil stadigvæk virke alligevel.
+
+Dog vil der i princippet ikke blive stjålet noget. Vores variabel 'balance' er nemlig i global scope. 
+Altså lad mig forklare det lidt bedre. I vores parametre skal vi både bruge en 'balance' og 'amount' når vi kalder på funktionen 'steal'.
+Men fordi JavaScript fungere sådan at den tjekker for lokale variabler først, så tager den balance og bruger den kun indenfor funktionens scope, i stedet for vores global variabel 'balance'.
+Altså så fordi vi har 'balance' som en parameter, så subtraktere vi faktisk kun fra vores lokale variabel 'balance' og ikke den global variabel 'balance'.
+Som så gør at der aldrig vil blive tager noget fra den global variabel 'balance'.
+
+Det kaldes også "variable shadowing" hvor at egentlig det betyder at den lokale variabel skygger for vores globale variabel.
+
+Dog er der flere fejl.
+I funktionen 'steal' er der ingen grund til at sætte variablen 'cameraOn' til true, eller der sker faktisk slet ikke.
+Fordi her bruger vi return før den kode, som egentlig betyder det er koder der aldrig bliver kørt.
+
+Det kan man egentlig kalde for "dead code" eller "unreachable code", fordi det aldrig kan blive kørt, nogensinde.

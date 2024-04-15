@@ -1,5 +1,5 @@
 // Alert with "Hello world" and add onclick event to button, after the DOM's content is loaded.
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     alert("Hello world");
     document.getElementById("sayHelloBtn").onclick = sayHello;
 })
