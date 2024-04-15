@@ -14,3 +14,5 @@ I funktionen 'steal' er der ingen grund til at sætte variablen 'cameraOn' til t
 Fordi her bruger vi return før den kode, som egentlig betyder det er koder der aldrig bliver kørt.
 
 Det kan man egentlig kalde for "dead code" eller "unreachable code", fordi det aldrig kan blive kørt, nogensinde.
+
+- Nicklas Lindegaard Martlev Gustavsen
