@@ -23,7 +23,6 @@ function calcBMI(height, weight) {
     return (weight / (height/100)**2).toFixed(2);
 }
 
-
 let bmiCategories = [
     { bmiMinLimit: 40, title: 'Overvægtig Klasse 3', color: 'red'},
     { bmiMinLimit: 35, title: 'Overvægtig Klasse 2', color: 'orange'},
