@@ -56,4 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const guitar = new Guitar("Wood");
     const saxophone = new Saxophone("Gold");
     const flute = new Flute(8, "Plastic");
+
+    console.log(harp);
+    console.log(guitar);
+    console.log(saxophone);
+    console.log(flute);
 });
