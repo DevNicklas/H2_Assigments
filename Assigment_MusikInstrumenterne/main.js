@@ -3,9 +3,8 @@ class Instrument {
         this.name = name;
     }
 
+    // Plays audio if the mp3 is found
     play(sound) {
-
-        // Plays audio if the mp3 is found
         try {
             const audio = document.getElementById(sound);
             audio.play();
@@ -51,14 +50,10 @@ class Flute extends Instrument {
     }
 }
 
-const harp = new Harp(10);
-const guitar = new Guitar("Wood");
-const saxophone = new Saxophone("Gold");
-const flute = new Flute(8, "Plastic");
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const harp = new Harp(10);
-//     const guitar = new Guitar("Wood");
-//     const saxophone = new Saxophone("Gold");
-//     const flute = new Flute(8, "Plastic");
-// });
+// Initialize instruments after all DOM content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    const harp = new Harp(10);
+    const guitar = new Guitar("Wood");
+    const saxophone = new Saxophone("Gold");
+    const flute = new Flute(8, "Plastic");
+});
