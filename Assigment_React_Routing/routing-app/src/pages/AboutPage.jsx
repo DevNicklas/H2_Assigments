@@ -4,7 +4,7 @@ function AboutPage() {
     return(
         <div>
             <h1>About Page</h1>
-            <Link to="/">Go to home page using link</Link>
+            <Link to="/">Go to home page</Link>
         </div>
     );
 }
