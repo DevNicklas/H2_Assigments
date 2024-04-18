@@ -7,7 +7,7 @@ function Timer() {
     // Update count every second
     useEffect(() => {
         const timer = setInterval(() => {
-            setCount(previouslyCount => previouslyCount + 1);
+            setCount(previousCount => previousCount + 1);
         }, 1000);
 
         // When component unmounts then clean up interval.
