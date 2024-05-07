@@ -1,0 +1,9 @@
+.language-flags {
+    display: flex;
+    column-gap: 16px;
+}
+
+.flag {
+    width: 50px;
+    cursor: pointer;
+}
