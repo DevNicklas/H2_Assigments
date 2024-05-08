@@ -1,0 +1,9 @@
+.no-style-route {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.no-style-route:hover {
+    font-size: 18px;
+}

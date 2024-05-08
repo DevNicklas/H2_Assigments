@@ -6,4 +6,9 @@
 .flag {
     width: 50px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.flag:hover {
+    width: 60px;
 }

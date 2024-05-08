@@ -8,6 +8,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { PageRoutingComponent } from './components/page-routing/page-routing.component';
+import { FormPageComponent } from './pages/form-page/form-page.component';
+import { DataPageComponent } from './pages/data-page/data-page.component';
 
 // Load translation files
 export function createTranslateLoader(http: HttpClient) {
@@ -18,7 +21,10 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [
     AppComponent,
     LanguageSwitchComponent,
-    HomePageComponent
+    HomePageComponent,
+    PageRoutingComponent,
+    FormPageComponent,
+    DataPageComponent
   ],
   imports: [
     BrowserModule,
