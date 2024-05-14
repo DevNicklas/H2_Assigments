@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { PageRoutingComponent } from './components/page-routing/page-routing.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
 import { DataPageComponent } from './pages/data-page/data-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // Load translation files
 export function createTranslateLoader(http: HttpClient) {
@@ -30,6 +31,7 @@ export function createTranslateLoader(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
         defaultLanguage: 'en',
         useDefaultLang: true,

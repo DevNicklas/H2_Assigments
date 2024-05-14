@@ -5,5 +5,10 @@
     "switch_language": "Skift Sprog",
     "this_is_data_from_the_service": "Dette er data fra servicen",
     "get_all_logins_in_console": "Få alle logins i konsolen",
-    "routing_to_pages": "Routing til sider"
+    "routing_to_pages": "Routing til sider",
+    "username": "Brugernavn",
+    "password": "Adgangskode",
+    "enter_username": "Indtast brugernavn",
+    "enter_password": "Indtast password",
+    "submit_login": "Opret login"
 }

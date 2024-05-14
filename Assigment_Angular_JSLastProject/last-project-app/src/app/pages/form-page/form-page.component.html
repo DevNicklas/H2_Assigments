@@ -1,1 +1,18 @@
-<p>form-page works!</p>
+<div id="wrapper">
+    <h1>{{ "form_page" | translate}}</h1>
+    <h2>Enter login information</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onLoginFormSubmit">
+        <div>
+            <label for="username">{{ "username" | translate }}</label><br>
+            <input type="text" id="username" name="username" placeholder="{{ 'enter_username' | translate }}" autocomplete="username">
+        </div>
+        <div>
+            <label for="password">{{ "password" | translate }}</label><br>
+            <input type="password" id="password" name="password" placeholder="{{ 'enter_password' | translate }}" autocomplete="current-password">
+        </div>
+        <div>
+            <input type="submit" value="{{ 'submit_login' | translate }}">
+        </div>
+    </form>
+    <app-page-routing />
+</div>

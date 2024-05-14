@@ -5,5 +5,10 @@
     "switch_language": "Switch Language",
     "this_is_data_from_the_service": "This is data from the service",
     "get_all_logins_in_console": "Get all login in console",
-    "routing_to_pages": "Routing to pages"
+    "routing_to_pages": "Routing to pages",
+    "username": "Username",
+    "password": "Password",
+    "enter_username": "Enter username",
+    "enter_password": "Enter password",
+    "submit_login": "Submit login"
 }
