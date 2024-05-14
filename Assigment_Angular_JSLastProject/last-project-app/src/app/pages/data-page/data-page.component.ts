@@ -8,12 +8,12 @@ import { DataService } from '../../services/data.service';
 })
 export class DataPageComponent {
 
-    constructor(private dataService: DataService) {
-
-    }
+    constructor(private dataService: DataService) { }
 
     printAllLogins(): void {
+
+        // Get all logins from data service, and print them in console.
         const logins = this.dataService.getLogins();
-        console.log(logins);
+        console.log("All logins:", logins);
     }
 }

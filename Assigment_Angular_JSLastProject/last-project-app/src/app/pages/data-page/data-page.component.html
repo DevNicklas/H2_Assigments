@@ -1,5 +1,6 @@
 <div id="wrapper">
-    <h1>Data page</h1>
-    <h2>This is data from the service</h2>
-    <button (click)="printAllLogins()">Get all logins in console</button>
+    <h1>{{ "data_page" | translate }}</h1>
+    <h2>{{"this_is_data_from_the_service" | translate }}</h2>
+    <button (click)="printAllLogins()">{{ "get_all_logins_in_console" | translate}}</button>
+    <app-page-routing />
 </div>
