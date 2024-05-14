@@ -19,8 +19,11 @@ export class FormPageComponent {
 
     onLoginFormSubmit() {
         if(this.loginForm.valid) {
-            console.log(this.loginForm.value);
+            this.dataService.addLogin(this.loginForm.value.username);
+            console.log("A new login has been succesfully created");
+            this.loginForm.reset();
+        } else {
+            console.error("The login is wrongfully fulfilled");
         }
-        console.error("The login is wrongfully fulfilled");
     }
 }
